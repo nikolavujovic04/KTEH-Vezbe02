@@ -97,7 +97,8 @@ h4{
 
 .slika:hover{
     color: white;
-    opacity: 0.7;
+    //opacity: 0.7;
+    box-shadow: 3px 3px 3px;
 }
 
 #letovanje1{
