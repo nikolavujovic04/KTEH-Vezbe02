@@ -4,12 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        background: linear-gradient(120deg, #f0f0f0, #d0e0f0);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      main {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      form#kontakt {
+        background-color: #ffffff;
+        padding: 30px 40px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 300px;
+      }
+
+      form#kontakt input {
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        transition: border-color 0.3s, box-shadow 0.3s;
+        color: black;
+      }
+
+      ::placeholder {
+        color: #000;
+        opacity: 1;
+      }
+
+      form#kontakt input:focus {
+        border-color: rgb(168, 137, 82);
+        box-shadow: 0 0 5px rgba(168, 137, 82, 0.3);
+        outline: none;
+      }
+
+      form#kontakt input[type="submit"] {
+        background-color: rgb(168, 137, 82);
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+
+      form#kontakt input[type="submit"]:hover {
+        background-color: #b59b6b;
+      }
+    </style>
   </head>
   <body>
-    <form action="" id="kontakt">
-      <input type="text" placeholder="Ime i prezime" name="ime" required />
-      <input type="email" placeholder="Email" name="email" required />
-      <input type="password" name="sifra" placeholder="Sifra" required />
-    </form>
+    <nav>
+      <div class="meni">
+        <ul>
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="ponuda.html">Ponuda</a></li>
+          <li><a href="onama.html">O nama</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <form action="" id="kontakt">
+        <input type="text" placeholder="Ime i prezime" name="ime" required />
+        <input type="email" placeholder="Email" name="email" required />
+        <input type="password" name="sifra" placeholder="Sifra" required />
+      </form>
+    </main>
   </body>
 </html>
